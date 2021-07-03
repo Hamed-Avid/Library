@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Persistence.EF\\Library.Persistence.EF.csproj": {}
+    "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.RestApi\\Library.RestApi.csproj": {}
   },
   "projects": {
     "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Entities\\Library.Entities.csproj": {
@@ -132,6 +132,85 @@
           "warn": true,
           "frameworkReferences": {
             "NETStandard.Library": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.RestApi\\Library.RestApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.RestApi\\Library.RestApi.csproj",
+        "projectName": "Library.RestApi",
+        "projectPath": "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.RestApi\\Library.RestApi.csproj",
+        "packagesPath": "C:\\Users\\hamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.RestApi\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\hamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net5.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net5.0": {
+            "targetAlias": "net5.0",
+            "projectReferences": {
+              "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Persistence.EF\\Library.Persistence.EF.csproj": {
+                "projectPath": "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Persistence.EF\\Library.Persistence.EF.csproj"
+              },
+              "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Services\\Library.Services.csproj": {
+                "projectPath": "C:\\Users\\hamed\\OneDrive\\Desktop\\Work\\Library\\src\\Library.Services\\Library.Services.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[5.0.7, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[5.6.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },

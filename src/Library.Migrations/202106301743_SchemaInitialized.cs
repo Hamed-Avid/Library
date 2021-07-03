@@ -15,8 +15,8 @@ namespace Library.Migrations
                              .WithColumn("Id").AsInt32().NotNullable().PrimaryKey().Identity()
                              .WithColumn("Title").AsString(100).Unique().NotNullable()
                              .WithColumn("Writer").AsString(100).NotNullable()
-                             .WithColumn("MinAge").AsInt16().NotNullable()
-                             .WithColumn("MaxAge").AsInt16().Nullable()
+                             .WithColumn("MinAge").AsByte().NotNullable()
+                             .WithColumn("MaxAge").AsByte().Nullable()
                              .WithColumn("CategoryId").AsInt32().NotNullable()
                              .ForeignKey("FK_Books_Categories", "Categories", "Id").NotNullable();
 
