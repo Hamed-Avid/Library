@@ -5,16 +5,24 @@ namespace Library.Persistence.EF
 {
     public class EFDataContext : DbContext
     {
-        public EFDataContext(string connectionString)
-            : this(new DbContextOptionsBuilder<EFDataContext>().UseSqlServer(connectionString).Options)
+        public EFDataContext(DbContextOptions<EFDataContext> options)
+               : base(options)
         {
         }
-        private EFDataContext(DbContextOptions<EFDataContext> options) : base(options) { }
+        //public EFDataContext(string connectionString)
+        //    : this(new DbContextOptionsBuilder<EFDataContext>().UseSqlServer(connectionString).Options)
+        //{
+        //}
+        //private EFDataContext(DbContextOptions<EFDataContext> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //protected override void OnModelCreating(ModelBuilder modelBuilder)
+        //{
+        //    base.OnModelCreating(modelBuilder);
+        //    modelBuilder.ApplyConfigurationsFromAssembly(typeof(EFDataContext).Assembly);
+        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.ApplyConfigurationsFromAssembly(typeof(EFDataContext).Assembly);
+            optionsBuilder.UseSqlServer("Server=.;Database=Library;Trusted_Connection=True;");
         }
 
         public DbSet<Category> Categories { get; set; }

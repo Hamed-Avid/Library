@@ -1,5 +1,42 @@
 ﻿<SolutionConfiguration>
   <Settings>
+    <AutoEnable>True</AutoEnable>
     <CurrentEngineMode>Run all tests automatically [Global]</CurrentEngineMode>
+    <TestListTreeLayout>
+      <Column>
+        <Name>TestFriendlyName</Name>
+        <Width>202</Width>
+      </Column>
+      <Column>
+        <Name>ExecutionTime</Name>
+        <Width>218</Width>
+      </Column>
+    </TestListTreeLayout>
+    <TestsWindowMenuOptions>
+      <VerticalSplitMenuOption>false</VerticalSplitMenuOption>
+      <ShowPassingTestsMenuOption>true</ShowPassingTestsMenuOption>
+      <ShowFailingTestsMenuOption>true</ShowFailingTestsMenuOption>
+      <ShowUnexecutedTestsMenuOption>true</ShowUnexecutedTestsMenuOption>
+      <ShowIgnoredTestsMenuOption>true</ShowIgnoredTestsMenuOption>
+    </TestsWindowMenuOptions>
+    <TestsWindowSplitterDistance>438</TestsWindowSplitterDistance>
+    <TestsWindowTreeLayout>
+      <Column>
+        <Name>Name</Name>
+        <Width>652</Width>
+      </Column>
+      <Column>
+        <Name>Status</Name>
+        <Width>177</Width>
+      </Column>
+      <Column>
+        <Name>LastExecutionTime</Name>
+        <Width>181</Width>
+      </Column>
+      <Column>
+        <Name>GridNode</Name>
+        <Width>176</Width>
+      </Column>
+    </TestsWindowTreeLayout>
   </Settings>
 </SolutionConfiguration>

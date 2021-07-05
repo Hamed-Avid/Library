@@ -31,7 +31,7 @@ namespace Library.Migrations
                     // Add SQLite support to FluentMigrator
                     .AddSqlServer2014()
                     // Set the connection string
-                   // .WithGlobalConnectionString(@"server = . ; initial catalog = Library ; integrated security = true")
+                    // .WithGlobalConnectionString(@"server = . ; initial catalog = Library ; integrated security = true")
                     .WithGlobalConnectionString(@"server = . ; initial catalog = Library_Test ; integrated security = true")
                     // Define the assembly containing the migrations
                     .ScanIn(Assembly.GetExecutingAssembly()).For.Migrations())

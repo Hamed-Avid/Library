@@ -14,6 +14,7 @@ using Library.Services.Trusteeship;
 using Library.Services.Trusteeship.Contracts;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -34,7 +35,7 @@ namespace Library.RestApi
         {
             services.AddControllers().AddNewtonsoftJson(_ => _.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore);
             services.AddSwaggerGen();
-            services.AddDbContext<EFDataContext>();
+            services.AddDbContext<EFDataContext>(_ => _.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddScoped<UnitOfwork, EFUnitOfWork>();
             services.AddScoped<BookRepository, EFBookRepository>();
             services.AddScoped<BookService, BookAppService>();

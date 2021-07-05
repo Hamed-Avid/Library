@@ -5,10 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Books\Exceptions\" />
-    <Folder Include="Categories\Exceptions\" />
     <Folder Include="People\Exceptions\" />
-    <Folder Include="Trusteeship\Exceptions\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Library.Entities\Library.Entities.csproj" />
   </ItemGroup>
 
 </Project>
